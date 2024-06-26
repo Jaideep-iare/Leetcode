@@ -20,10 +20,7 @@ class Solution:
             c2+=l2.val*10**i
             i+=1
             l2=l2.next
-
-
         a=reversed(str(c1+c2))
-
        
         head = ListNode(0)
         n=head
