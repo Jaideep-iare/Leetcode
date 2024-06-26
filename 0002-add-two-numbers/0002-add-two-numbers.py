@@ -23,7 +23,7 @@ class Solution:
 
 
         a=reversed(str(c1+c2))
-        print(a)
+
        
         head = ListNode(0)
         n=head
