@@ -7,15 +7,23 @@ class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         s1=""
         s2=""
+        c1=0
+        c2=0
+        i=0
         while l1!=None:
-            s1=str(l1.val)+s1
+            c1+=l1.val*10**i 
+            i+=1
             l1=l1.next
 
+        i=0
         while l2!=None:
-            s2=str(l2.val)+s2
+            c2+=l2.val*10**i
+            i+=1
             l2=l2.next
 
-        a=[int(i) for i in reversed(str(int(s1)+int(s2)))]
+
+        a=reversed(str(c1+c2))
+        print(a)
        
         head = ListNode(0)
         n=head
