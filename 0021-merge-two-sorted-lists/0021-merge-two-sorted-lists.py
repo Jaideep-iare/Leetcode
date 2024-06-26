@@ -12,12 +12,11 @@ class Solution:
 
             if n1.val<n2.val:
                 n3.next = n1
-                n3 = n3.next
                 n1 = n1.next
             else:
                 n3.next = n2
-                n3 = n3.next
                 n2 = n2.next
+            n3 = n3.next
         if n1:
             n3.next = n1
         else:
