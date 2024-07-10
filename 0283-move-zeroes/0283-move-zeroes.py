@@ -15,12 +15,4 @@ class Solution:
                 j +=1
             i+=1
         return nums
-        # j=-1
-        # for i in range(len(nums)):
-        #     if j==-1 and nums[i]==0:
-        #         j=i
-        #     if j!=-1 and nums[i]!=0:
-        #         nums[i],nums[j]= nums[j],nums[i]
-        #         j+=1
-        # return nums
             
