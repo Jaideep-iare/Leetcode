@@ -5,7 +5,9 @@ class Solution:
         for i in nums:
             if i==1:
                 c+=1
+            elif i==0:
                 maxcount=max(maxcount,c)
-            else:
                 c=0
+        if c>maxcount:
+            return c
         return maxcount
