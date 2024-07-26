@@ -7,9 +7,9 @@ class Solution:
                 count+=1
             else:
                 count-=1
-            if count==0:
-                ele = nums[i+1]
-                c=0
+                if count==0:
+                    ele = nums[i+1]
+                    c=0
             i=i+1
         return ele
         
