@@ -5,6 +5,6 @@ class Solution:
         for i in prices:
             if i<buy:
                 buy=i
-            else:
+            elif buy!=i:
                 profit=max(profit,i-buy)
         return profit
