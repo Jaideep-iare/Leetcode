@@ -5,6 +5,6 @@ class Solution:
         for i in prices:
             if i<buy:
                 buy=i
-            elif buy!=i and i-buy>profit:
+            elif i-buy>profit:
                 profit=i-buy
         return profit
