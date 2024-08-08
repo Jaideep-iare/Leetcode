@@ -3,13 +3,19 @@ class Solution:
         """
         Do not return anything, modify matrix in-place instead.
         """
-        
         #optimal
         for i in range(len(matrix)):
-            for j in range(i+1,len(matrix[0])):
+            for j in range(0,i):
                 matrix[i][j],matrix[j][i]=matrix[j][i],matrix[i][j]
         for i in range(len(matrix)):
             matrix[i].reverse()
+            
+#         #best
+#         for i in range(len(matrix)):
+#             for j in range(i+1,len(matrix[0])):
+#                 matrix[i][j],matrix[j][i]=matrix[j][i],matrix[i][j]
+#         for i in range(len(matrix)):
+#             matrix[i].reverse()
         
         #bruteforce 
 #         m=[]
