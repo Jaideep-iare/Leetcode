@@ -5,8 +5,7 @@ class Solution {
         int preSum=0, cnt=0;
         for(int i=0;i<nums.length;i++){
             preSum+=nums[i];
-            int comp = preSum-k;
-            cnt += mpp.getOrDefault(comp, 0);
+            cnt += mpp.getOrDefault(preSum-k, 0);
             mpp.put(preSum, mpp.getOrDefault(preSum,0)+1);
         }
         return cnt;
