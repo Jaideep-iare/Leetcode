@@ -4,7 +4,9 @@ class Solution:
         nums.sort()
         ans=[]
         for i in range(n):
-            if i!=0 and nums[i]==nums[i-1]:
+            if nums[i]>0:
+                break
+            elif i!=0 and nums[i]==nums[i-1]:
                     continue
             j=i+1
             k=n-1
