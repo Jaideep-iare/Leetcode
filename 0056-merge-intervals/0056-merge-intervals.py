@@ -5,6 +5,8 @@ class Solution:
         for i in range(len(intervals)):
             x1=intervals[i][0]
             y1=intervals[i][1]
+            if ans and ans[-1][1]>y1:
+                continue
             if ans and ans[-1][1]>=x1:
                 ans[-1][1]=max(ans[-1][1], y1)
             
