@@ -13,11 +13,7 @@ class Solution:
                 l=n-1
                 while(k<l):
                     s=nums[i]+nums[j]+nums[k]+nums[l]
-                    if s<target:                  
-                        k+=1
-                    elif s>target:
-                        l-=1
-                    else:
+                    if s==target: 
                         ans.append([nums[i],nums[j],nums[k],nums[l]])
                         k+=1
                         l-=1
@@ -25,5 +21,10 @@ class Solution:
                             k+=1
                         while nums[l]==nums[l+1] and k<l:
                             l-=1
+                    elif s<target:                  
+                        k+=1
+                    else:
+                        l-=1
+                    
         return ans
     
